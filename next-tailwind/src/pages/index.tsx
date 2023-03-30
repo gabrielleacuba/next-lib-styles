@@ -1,5 +1,9 @@
 import Head from "next/head";
-import Menu from "./components/Menu";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import fs from "fs";
+import Image from "next/image";
+import Cards from "./components/Cards";
 
 export default function Home() {
   return (
@@ -8,9 +12,10 @@ export default function Home() {
         <title>Tailwind Project</title>
       </Head>
       <main>
-        <div>
-          <Menu />
-          <h1 className="text-magenta">Hello world!</h1>
+        <div className="bg-shades-gray-00 dark:bg-shades-gray-100 h-screen">
+          <Navbar />
+          <Banner />
+          <Cards />
         </div>
       </main>
     </>
