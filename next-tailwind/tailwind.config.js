@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./components/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -26,6 +26,9 @@ module.exports = {
       },
       boxShadow: {
         card: "10px 9px 9px -6px rgba(0,0,0,0.75)",
+      },
+      fontFamily: {
+        inconsolata: ["Inconsolata"],
       },
     },
   },
