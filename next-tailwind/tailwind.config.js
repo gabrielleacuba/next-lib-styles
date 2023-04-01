@@ -23,6 +23,7 @@ module.exports = {
       backgroundImage: {
         dayMovie: "url('/dayMovie.jpg')",
         weekMovie: "url('/weekMovie.jpg')",
+        bannerImage: "url(/backgroundBanner.jpeg)",
       },
       boxShadow: {
         card: "10px 9px 9px -6px rgba(0,0,0,0.75)",
