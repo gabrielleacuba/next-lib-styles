@@ -15,6 +15,7 @@ module.exports = {
       "shades-gray-80": "var(--gl-color-shades-gray-80)",
       "shades-gray-90": "var(--gl-color-shades-gray-90)",
       "shades-gray-100": "var(--gl-color-shades-gray-100)",
+      warning: "#ffc107",
     },
     extend: {
       fontFamily: {
@@ -30,6 +31,7 @@ module.exports = {
       },
       fontFamily: {
         inconsolata: ["Inconsolata"],
+        poppins: ["Poppins"],
       },
     },
   },
