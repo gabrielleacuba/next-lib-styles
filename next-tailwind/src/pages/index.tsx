@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import fs from "fs";
-import Image from "next/image";
-import Cards from "./components/Cards";
+import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import Cards from "../components/Cards";
 
-export default function Home() {
+import { ListArray } from "./constants/types";
+
+export default function Home({list}: {list: ListArray[]}) {
   return (
     <>
       <Head>
@@ -15,9 +15,21 @@ export default function Home() {
         <div className="bg-shades-gray-00 dark:bg-shades-gray-100 h-screen">
           <Navbar />
           <Banner />
-          <Cards />
+          <Cards moviesList={list} />
         </div>
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/trending");
+
+  const json = await res.json();
+
+  return {
+    props: {
+      list: json.list,
+    },
+  };
 }

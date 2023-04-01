@@ -1,5 +1,5 @@
 import Image from "next/image";
-import useColorMode from '../../../hooks/useColorMode';
+import useColorMode from '../../hooks/useColorMode';
 
 export const Navbar = () => {
   const [colorMode, serColorMode] = useColorMode()
