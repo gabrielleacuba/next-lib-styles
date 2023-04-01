@@ -5,19 +5,16 @@ import Cards from "../components/Cards";
 
 import { ListArray } from "./constants/types";
 
-export default function Home({list}: {list: ListArray[]}) {
+export default function Home({ list }: { list: ListArray[] }) {
   return (
     <>
       <Head>
         <title>Tailwind Project</title>
       </Head>
       <main>
-        <div className="bg-shades-gray-00 dark:bg-shades-gray-100 h-auto">
-          <Navbar />
-          <Banner />
-          <Cards moviesList={list} />
-          <Cards moviesList={list} />
-        </div>
+        <Banner />
+        <Cards moviesList={list} />
+        <Cards moviesList={list} />
       </main>
     </>
   );

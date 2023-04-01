@@ -12,7 +12,7 @@ export default async function handler(
 ) {
   
   const result = await fetch(
-    `${apiBase}/trending/movie/week?api_key=${apiKey}&language=pt-BR`
+    `${apiBase}/trending/all/week?api_key=${apiKey}&language=pt-BR`
   );
 
   const json = await result.json();
