@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import { ListArray, ListType } from "../pages/constants/types";
+import { ListArray } from "../pages/constants/types";
 import { motion } from "framer-motion";
 import Card from "./Card";
-import Image from "next/image";
 
 export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
   const carousel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
+
+  console.log(typeof moviesList)
 
   useEffect(() => {
     const scrollWidth = carousel.current?.scrollWidth;
@@ -16,6 +17,7 @@ export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
       setWidth(scrollWidth - offsetWidth);
     }
   });
+
   return (
     <>
       <div className=" flex flex-col h-auto mt-11 py-11">
@@ -39,6 +41,7 @@ export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
             >
               <ul className="flex">
                 {moviesList.map((item: any) => (
+
                   <motion.div key={item.id}>
                     <Card movie={item} />
                   </motion.div>

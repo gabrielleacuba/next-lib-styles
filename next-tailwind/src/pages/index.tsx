@@ -5,7 +5,13 @@ import Cards from "../components/Cards";
 
 import { ListArray } from "./constants/types";
 
-export default function Home({ list }: { list: ListArray[] }) {
+export default function Home({
+  listWeek,
+  listDay,
+}: {
+  listWeek: ListArray[];
+  listDay: ListArray[];
+}) {
   return (
     <>
       <Head>
@@ -13,8 +19,8 @@ export default function Home({ list }: { list: ListArray[] }) {
       </Head>
       <main>
         <Banner />
-        <Cards moviesList={list} />
-        <Cards moviesList={list} />
+        <Cards moviesList={listWeek} />
+        <Cards moviesList={listDay} />
       </main>
     </>
   );
@@ -27,7 +33,8 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      list: json.list,
+      listWeek: json.listWeek,
+      listDay: json.listDay,
     },
   };
 }

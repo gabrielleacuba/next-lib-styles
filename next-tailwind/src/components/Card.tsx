@@ -1,4 +1,5 @@
-export const Card = ({ movie }: { movie: any }) => {
+import { ListType } from '../pages/constants/types';
+export const Card = ({ movie }: { movie: ListType }) => {
   const image = `https://image.tmdb.org/t/p/original${movie.poster_path}`;
   return (
     <>
