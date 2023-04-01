@@ -18,15 +18,17 @@ export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
   });
   return (
     <>
-      <div className=" flex flex-col bg-shades-gray-80 h-auto mt-11 py-11">
-        <div className=" ml-4">
+      <div className=" flex flex-col h-auto mt-11 py-11">
+        <div className= "ml-10">
+          
           <div className="flex w-auto">
-            <h1 className="text-4xl font-inconsolata mx-3 text-shades-gray-00">Filmes populares da semana</h1>
-            <Image src={"/estrela.png"} alt="icone estela" width={30} height={30}/>
+            <h1 className="text-3xl font-popins mx-3 text-shades-gray-00 font-extralight">Filmes populares da semana</h1>
+
           </div>
+
           <motion.div
             ref={carousel}
-            className="cursor-grab overflow-hidden w-full max-w-full my-16"
+            className="cursor-grab overflow-hidden w-full max-w-full my-12"
           >
             <motion.div
               drag="x"

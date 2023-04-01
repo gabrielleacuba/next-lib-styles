@@ -3,8 +3,7 @@ export const Card = ({ movie }: { movie: any }) => {
   return (
     <>
       <div
-        className="h-96 mx-5 w-72 bg-shades-gray-90 rounded-md bg-cover bg-center shadow-card shadow-shades-gray-90
-        "
+        className="card"
         style={{
           backgroundImage: `url(${image})`,
         }}
