@@ -3,7 +3,7 @@ import { ListArray } from "../../pages/constants/types";
 import { motion } from "framer-motion";
 import Card from "../Card";
 
-export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
+export const Cards = ({ moviesList, title }: { moviesList: ListArray[], title: String }) => {
   const carousel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
 
@@ -21,9 +21,9 @@ export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
       <div className=" flex flex-col h-auto mt-11 py-11">
         <div className= "ml-10">
           
-          <div className="flex w-auto">
-            <h1 className="text-3xl font-popins mx-3 text-shades-gray-00 font-extralight">Filmes populares da semana</h1>
-
+          <div className="flex flex-col w-auto">
+            <h1 className="text-3xl font-popins mx-3 text-shades-gray-00 font-extralight">{title}</h1>
+            <div className="w-24 border-2 border-shades-gray-00 mx-3 mt-2"></div>
           </div>
 
           <motion.div

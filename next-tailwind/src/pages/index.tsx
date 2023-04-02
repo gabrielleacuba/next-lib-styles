@@ -18,8 +18,8 @@ export default function Home({
       </Head>
       <main>
         <Banner />
-        <Cards moviesList={listWeek} />
-        <Cards moviesList={listDay} />
+        <Cards moviesList={listWeek} title="WEEK TRENDING" />
+        <Cards moviesList={listDay}  title="DAY TRENDING"/>
       </main>
     </>
   );
