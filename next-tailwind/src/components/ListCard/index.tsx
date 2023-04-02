@@ -18,17 +18,17 @@ export const Cards = ({ moviesList, title }: { moviesList: ListArray[], title: S
 
   return (
     <>
-      <div className=" flex flex-col h-auto mt-11 py-11">
-        <div className= "ml-10">
+      <div className="flex flex-col h-auto mt-gl-spacing-10 py-gl-spacing-10">
+        <div className= "ml-gl-spacing-10">
           
           <div className="flex flex-col w-auto">
-            <h1 className="text-3xl font-popins mx-3 text-shades-gray-00 font-extralight">{title}</h1>
-            <div className="w-24 border-2 border-shades-gray-00 mx-3 mt-2"></div>
+            <h1 className="text-gl-font-size-xl font-popins mx-gl-spacing-03  text-shades-gray-100 dark:text-shades-gray-00 font-gl-font-weight-light">{title}</h1>
+            <div className="w-24 border-gl-border-width-md border-shades-magenta-50 dark:border-shades-turquoise-60 mx-gl-spacing-03 mt-gl-spacing-02"/>
           </div>
 
           <motion.div
             ref={carousel}
-            className="cursor-grab overflow-hidden w-full max-w-full my-12"
+            className="cursor-grab overflow-hidden w-full max-w-full mt-gl-spacing-12"
           >
             <motion.div
               drag="x"

@@ -7,11 +7,11 @@
 
 @layer utilities {
   .badge {
-    @apply inline-block px-1 py-1  text-center whitespace-nowrap align-baseline rounded;
+    @apply inline-block px-gl-spacing-01 py-gl-spacing-01  text-center whitespace-nowrap align-baseline rounded-gl-border-radius-xs  ;
   }
 
   .card {
-    @apply h-80 w-64 bg-shades-gray-90 rounded-md bg-cover bg-center shadow-card shadow-shades-gray-90
+    @apply h-80 w-64 bg-shades-gray-90 rounded-gl-border-radius-xs bg-cover bg-center shadow-card shadow-shades-gray-90
     transform scale-90 transition ease-in-out duration-300 hover:transform hover:scale-100;
   }
 }

@@ -1,11 +1,11 @@
-import Image from "next/image";
+
 
 export const Banner = () => {
   return (
     <>
       <div className="relative h-[660px]  bg-cover bg-center  bg-bannerImage md:h-[660px] ">
         <div
-          className="absolute inset-0 h-full bg-shades-gray-100 w-[100%]"
+          className="absolute inset-0 h-full bg-shades-gray-00 dark:bg-shades-gray-100 w-[100%]"
           style={{
             background:
               "linear-gradient(40deg, rgb(39 40 41) 0%, rgb(39 40 41) 25%, rgba(83, 100, 141, 0) 100%)",
@@ -13,7 +13,7 @@ export const Banner = () => {
         ></div>
 
         <div className="absolute top-48 left-0 ml-8">
-          <span className="badge bg-warning text-dark font-poppins text-[16px] mb-6 font-bold">
+          <span className="badge bg-shades-magenta-50 dark:bg-shades-yellow-50 text-dark font-poppins text-[16px] mb-6 font-bold">
             New
           </span>
 
