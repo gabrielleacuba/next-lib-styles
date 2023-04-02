@@ -1,13 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import { ListArray } from "../pages/constants/types";
+import { ListArray } from "../../pages/constants/types";
 import { motion } from "framer-motion";
-import Card from "./Card";
+import Card from "../Card";
 
 export const Cards = ({ moviesList }: { moviesList: ListArray[] }) => {
   const carousel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
-
-  console.log(typeof moviesList)
 
   useEffect(() => {
     const scrollWidth = carousel.current?.scrollWidth;

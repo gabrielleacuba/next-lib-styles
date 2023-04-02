@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Cards from "../components/Cards";
+import Cards from "../components/ListCard";
 
 import { ListArray } from "./constants/types";
 

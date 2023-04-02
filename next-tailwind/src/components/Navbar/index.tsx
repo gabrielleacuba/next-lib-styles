@@ -1,8 +1,8 @@
 import Image from "next/image";
-import useColorMode from '../../hooks/useColorMode';
+import useColorMode from "../../../hooks/useColorMode"
 
 export const Navbar = () => {
-  const [colorMode, serColorMode] = useColorMode()
+  const [colorMode, serColorMode] = useColorMode();
 
   return (
     <>
@@ -15,7 +15,14 @@ export const Navbar = () => {
             height={35}
             className="mx-5"
           />
-          <button className="mr-6 bg-shades-gray-70 p-3 rounded-md" onClick={() =>  serColorMode(colorMode === 'light' ? 'dark' : 'light')}>Theme</button>
+          <button
+            className="mr-6 bg-shades-gray-70 p-3 rounded-md"
+            onClick={() =>
+              serColorMode(colorMode === "light" ? "dark" : "light")
+            }
+          >
+            Theme
+          </button>
         </div>
       </div>
     </>
