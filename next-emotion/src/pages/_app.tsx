@@ -1,13 +1,11 @@
-import { globalStyle } from "@/styles/global";
+import "@wonderland/alice-tokens/dist/css/index.css";
+import type { AppProps } from "next/app";
 import { Global } from "@emotion/react";
-import { defaultTheme } from "../styles/themes/theme";
 import { ThemeProvider } from "@emotion/react";
 
+import { defaultTheme } from "../styles/themes/theme";
+import { globalStyle } from "@/styles/global";
 import { ThemeContextProvider } from "../styles/themes/ThemeContext";
-import "@wonderland/alice-tokens/dist/css/index.css";
-
-import type { AppProps } from "next/app";
-import { useState } from "react";
 import Layout from "@/components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
