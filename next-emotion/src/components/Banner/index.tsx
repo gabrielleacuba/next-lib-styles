@@ -8,7 +8,7 @@ import {
   ItemList,
 } from "./style";
 
-export const Banner = () => {
+const Banner = () => {
   return (
     <>
       <BannerContainer>
@@ -32,3 +32,5 @@ export const Banner = () => {
     </>
   );
 };
+
+export default Banner;

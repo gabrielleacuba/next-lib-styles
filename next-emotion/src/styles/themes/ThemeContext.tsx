@@ -1,12 +1,8 @@
 import type { ReactNode } from "react";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
-import { defaultTheme, lightTheme, darkTheme } from "../themes/theme";
-
-type ThemeContextType = {
-  theme: typeof lightTheme | typeof darkTheme;
-  toggleTheme: () => void;
-};
+import { defaultTheme, lightTheme, darkTheme } from "./theme";
+import { Theme, ThemeContextType } from "../../types/theme";
 
 export const ThemeContext = createContext<ThemeContextType>({
   theme: defaultTheme,
@@ -25,6 +21,19 @@ export const ThemeContextProvider = ({ children }: Props) => {
       prevTheme === lightTheme ? darkTheme : lightTheme
     );
   };
+
+  function toggleAliceDsThemeClass( colorMode : Theme) {
+    if (typeof window !== "undefined") {
+      const bodyClasses = window?.document.body;
+      colorMode.name === "dark"
+        ? bodyClasses.setAttribute("data-theme", "on-dark")
+        : bodyClasses.setAttribute("data-theme", "on-light");
+    }
+  }
+
+  useEffect(() => {
+    toggleAliceDsThemeClass(currentTheme);
+  }, [currentTheme]);
 
   return (
     <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>

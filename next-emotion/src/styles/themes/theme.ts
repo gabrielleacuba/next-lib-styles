@@ -1,20 +1,20 @@
 export const lightTheme = {
   name: "light",
   colors: {
-    primary: "#0070f3",
-    secondary: "#3c3c3c",
-    background: "#f0f0f0",
-    text: "#333",
+    background: "var(--sys-color-surface-background-default)",
+    primary: "var(--gl-color-shades-magenta-50)",
+    secondary: "var(--gl-color-shades-violet-40)",
+    text: "var(--gl-color-shades-gray-80)",
   },
 };
 
 export const darkTheme = {
   name: "dark",
   colors: {
-    primary: "#61dafb",
-    secondary: "#fff",
-    background: "#282c34",
-    text: "#fff",
+    primary: "var(--gl-color-shades-turquoise-60)",
+    secondary: "var(--gl-color-shades-yellow-50)",
+    background: "var(--gl-color-shades-gray-100)",
+    text: "var(--gl-color-shades-gray-00)",
   },
 };
 
