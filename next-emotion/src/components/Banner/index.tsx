@@ -1,3 +1,4 @@
+import Badge from "../Badge";
 import {
   BannerContainer,
   BannerGradient,
@@ -14,6 +15,7 @@ const Banner = () => {
       <BannerContainer>
         <BannerGradient />
         <BannerTextContainer>
+          <Badge />
           <BannerTitle>THE LAST OF US</BannerTitle>
           <BannerListText>
             <ItemList>2023</ItemList>
