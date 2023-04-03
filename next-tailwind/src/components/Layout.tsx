@@ -26,7 +26,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <div className="bg-shades-gray-10 dark:bg-shades-gray-100 h-auto">
+      <div className="bg-sys-color-surface-background-default dark:sys-color-surface-background-dark h-auto">
         <Navbar blackNavebar={blackNavebar} />
         <main>{children}</main>
       </div>
