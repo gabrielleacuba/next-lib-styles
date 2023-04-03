@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
 const LayoutContainer = styled.div`
-    height: 100vh;
-    background-color: var(--gl-color-shades-gray-100)
+  background-color: ${(props) => props.theme.colors.background};
+  height: 100vh;
 `;
 
 export { LayoutContainer };

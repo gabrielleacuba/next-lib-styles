@@ -21,3 +21,4 @@ const globalStyle = css`
 `;
 
 export { globalStyle };
+
