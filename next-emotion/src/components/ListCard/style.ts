@@ -6,7 +6,7 @@ const ListCardsSection = styled.div`
 
   height: auto;
   margin-top: var(--gl-spacing-10);
-  padding: var(--gl-spacing-10);
+  padding: var(--gl-spacing-10) 0;
 `;
 
 const ListCardContainer = styled.div`
@@ -32,10 +32,20 @@ const ListCardLine = styled.div`
     ${(props) => props.theme.colors.primary};
   margin-top: var(--gl-spacing-02);
 `;
+
+const CardCarouselContainer = styled.div`
+  cursor: grab;
+  overflow: hidden;
+  height: 320px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--gl-spacing-12);
+`;
 export {
   ListCardsSection,
   ListCardContainer,
   ListCardTitleContainer,
   ListCardTitle,
   ListCardLine,
+  CardCarouselContainer,
 };

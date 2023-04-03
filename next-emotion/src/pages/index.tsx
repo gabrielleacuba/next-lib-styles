@@ -7,8 +7,8 @@ export default function Home({
   listWeek,
   listDay,
 }: {
-  listWeek: ListArray;
-  listDay: ListArray;
+  listWeek: ListArray[];
+  listDay: ListArray[];
 }) {
   return (
     <>
@@ -18,6 +18,7 @@ export default function Home({
       <main>
         <Banner />
         <ListCard moviesList={listWeek} title="WEEK TRENDING" />
+        <ListCard moviesList={listDay} title="DAY TRENDING" />
       </main>
     </>
   );
