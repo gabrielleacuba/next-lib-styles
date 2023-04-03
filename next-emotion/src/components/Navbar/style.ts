@@ -14,6 +14,7 @@ const NavbarContainer = styled.div<NavbarContainerProps>`
   padding: 0 var(--gl-spacing-08);
 
   transition: all ease-in 150;
+  background-color: ${(props) => props.blackNavebar ? "var(--gl-color-shades-gray-100)" : "transparent"};
 `;
 
 const Button = styled.button`
