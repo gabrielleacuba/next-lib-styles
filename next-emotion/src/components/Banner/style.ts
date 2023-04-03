@@ -29,7 +29,7 @@ const BannerTextContainer = styled.div`
   margin-left: var(--gl-spacing-08);
 `;
 
-const BannerTitle = styled.h1`
+const BannerTitle = styled.h2`
   color: var(--gl-color-shades-gray-00);
   margin-bottom: var(--gl-spacing-04);
   font-size: var(--gl-font-size-xxl);

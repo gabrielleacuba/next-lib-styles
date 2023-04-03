@@ -20,6 +20,4 @@ const globalStyle = css`
   }
 `;
 
-export {
-  globalStyle
-}
+export { globalStyle };
