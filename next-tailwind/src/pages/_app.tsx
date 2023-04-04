@@ -1,6 +1,7 @@
+import "@wonderland/alice-tokens/dist/css/index.css";
 import Layout from "@/components/Layout";
 import "../styles/globals.css";
-import "@wonderland/alice-tokens/dist/css/index.css";
+import "../styles/tailwind.css";
 
 import type { AppProps } from "next/app";
 
