@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@alice-health/wonderland-react@^0.0.1":
+  version "0.0.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@alice-health/wonderland-react/-/wonderland-react-0.0.1.tgz#17929aeb5e2cf63603eef21e8d62b754ef93859f"
+  integrity sha512-ZJwafdDxl3VAxhifSV3IIpkqwENmPmDbLkQ1pOkfT1GuW9UhUAgOsOs6EIKAXnS+8PpqTs/uejtdx745EORXxw==
+  dependencies:
+    "@alice-health/wonderland" "^0.9.1"
+
+"@alice-health/wonderland@^0.9.1":
+  version "0.9.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@alice-health/wonderland/-/wonderland-0.9.1.tgz#52297db358222f28c9ccfd4b2dd8da9abde63d53"
+  integrity sha512-8p3cKaQkxcL2TgIgQ4YAwZiFZPe84PABAsWomupxDFQMTr5zflvTL8bCE880adp6F+qgxVx7pzFETykn3m5BWw==
+  dependencies:
+    "@stencil/core" "^3.1.0"
+    "@wonderland/alice-icons" "^3.0.1"
+    "@wonderland/alice-tokens" "^2.4.0"
+
 "@emotion/is-prop-valid@^0.8.2":
   version "0.8.8"
   resolved "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
@@ -105,6 +121,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@stencil/core@^3.1.0":
+  version "3.2.0"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@stencil/core/-/core-3.2.0.tgz#be869b68bbe588d33fe3109c5aea08fda6de761e"
+  integrity sha512-vAZiHg4h6hZn4GP6P4w/d7qJwovW0xroitVAn/Ay0rUOeMHqMDYTX5jq0Vy/bgKactKam5WL/to50esGe6lDUQ==
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"
@@ -142,6 +163,11 @@
   version "0.16.3"
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.3.tgz"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
+
+"@wonderland/alice-icons@^3.0.1":
+  version "3.0.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@wonderland/alice-icons/-/alice-icons-3.0.1.tgz#fe1c683df4c920ce0d51afea94dae2752f004156"
+  integrity sha512-vCtSI4Ts6r71E8ukt0wA8S/LXUPngQG/CoQzQrWB+i+Jhgw96PjNkPbZh95gC4WQ5PvGKKgejclQBiiiUnUDxQ==
 
 "@wonderland/alice-tokens@^2.4.0":
   version "2.4.0"

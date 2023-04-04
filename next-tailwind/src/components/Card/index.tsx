@@ -1,4 +1,4 @@
-import { ListType } from "../../pages/constants/types";
+import { ListType } from "../../types/movies";
 
 export const Card = ({ movie }: { movie: ListType }) => {
   const image = `https://image.tmdb.org/t/p/original${movie.poster_path}`;

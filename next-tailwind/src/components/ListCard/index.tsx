@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { ListArray } from "../../pages/constants/types";
+import { ListArray } from "../../types/movies";
 import { motion } from "framer-motion";
 import Card from "../Card";
 

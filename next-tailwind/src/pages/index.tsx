@@ -2,7 +2,8 @@ import Head from "next/head";
 import Banner from "../components/Banner";
 import Cards from "../components/ListCard";
 
-import { ListArray } from "./constants/types";
+import { ListArray } from "../types/movies";
+import { useEffect } from 'react';
 
 export default function Home({
   listWeek,
@@ -11,6 +12,13 @@ export default function Home({
   listWeek: ListArray[];
   listDay: ListArray[];
 }) {
+  useEffect(() => {
+    import("@alice-health/wonderland-react").then(
+      ({ defineCustomElements }) => {
+        defineCustomElements();
+      }
+    );
+  }, []);
   return (
     <>
       <Head>
@@ -19,7 +27,7 @@ export default function Home({
       <main>
         <Banner />
         <Cards moviesList={listWeek} title="WEEK TRENDING" />
-        <Cards moviesList={listDay}  title="DAY TRENDING"/>
+        <Cards moviesList={listDay} title="DAY TRENDING" />
       </main>
     </>
   );
