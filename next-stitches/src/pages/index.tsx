@@ -2,6 +2,7 @@ import "@wonderland/alice-tokens/dist/css/index.css";
 import { useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar blackNavebar={false} />
+        <Banner />
       </main>
     </>
   );
