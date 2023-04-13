@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@alice-health/wonderland-react@^0.0.1":
+  version "0.0.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@alice-health/wonderland-react/-/wonderland-react-0.0.1.tgz#17929aeb5e2cf63603eef21e8d62b754ef93859f"
+  integrity sha512-ZJwafdDxl3VAxhifSV3IIpkqwENmPmDbLkQ1pOkfT1GuW9UhUAgOsOs6EIKAXnS+8PpqTs/uejtdx745EORXxw==
+  dependencies:
+    "@alice-health/wonderland" "^0.9.1"
+
+"@alice-health/wonderland@^0.9.1":
+  version "0.9.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@alice-health/wonderland/-/wonderland-0.9.1.tgz#52297db358222f28c9ccfd4b2dd8da9abde63d53"
+  integrity sha512-8p3cKaQkxcL2TgIgQ4YAwZiFZPe84PABAsWomupxDFQMTr5zflvTL8bCE880adp6F+qgxVx7pzFETykn3m5BWw==
+  dependencies:
+    "@stencil/core" "^3.1.0"
+    "@wonderland/alice-icons" "^3.0.1"
+    "@wonderland/alice-tokens" "^2.4.0"
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://nexus.devtools.alice.tools/repository/npm/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -561,6 +577,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@stencil/core@^3.1.0":
+  version "3.2.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@stencil/core/-/core-3.2.1.tgz#50bd07f478e04a5527a35aee61deff772b056860"
+  integrity sha512-Ybm4NteQBScLq3H0JML/uqo4nWjNpZw1HAAURtR5LlRm7ptzNKO5S8EnHp3m05/uyTzeh9yLpUFHY7bxGNdYLg==
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://nexus.devtools.alice.tools/repository/npm/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
@@ -608,6 +629,16 @@
   version "0.16.3"
   resolved "https://nexus.devtools.alice.tools/repository/npm/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
+
+"@wonderland/alice-icons@^3.0.1":
+  version "3.0.1"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@wonderland/alice-icons/-/alice-icons-3.0.1.tgz#fe1c683df4c920ce0d51afea94dae2752f004156"
+  integrity sha512-vCtSI4Ts6r71E8ukt0wA8S/LXUPngQG/CoQzQrWB+i+Jhgw96PjNkPbZh95gC4WQ5PvGKKgejclQBiiiUnUDxQ==
+
+"@wonderland/alice-tokens@^2.4.0":
+  version "2.5.0"
+  resolved "https://nexus.devtools.alice.tools/repository/npm/@wonderland/alice-tokens/-/alice-tokens-2.5.0.tgz#56df238b8133aee4c2628c8c4d171061be4e14b1"
+  integrity sha512-TazFhVFUBPbOb+cd3eHMUkhB8S/A0zYoSUpK8f8IDzH7+i5og6qY2L8k4v6kfEq46d0WVngMi7OMk/kQomU8jg==
 
 ajv-formats@^2.1.1:
   version "2.1.1"
